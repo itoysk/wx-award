@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="wx:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/wx_war</output-path>
+    <root id="archive" name="wx_war.war">
+      <element id="artifact" artifact-name="wx:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="user-library" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

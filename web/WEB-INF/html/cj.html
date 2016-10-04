@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抽奖页面</title>
+    <link href="/files/activity-style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/files/jquery.min.js"></script>
+    <script type="text/javascript" src="/files/jQueryRotate.2.2.js"></script>
+    <script type="text/javascript" src="/files/jquery.easing.min.js"></script>
+
+    <script type="text/javascript" src="/js/wx.js"></script>
+</head>
+<body class="activity-lottery-winning">
+<div class="main">
+    <script type="text/javascript">
+        var loadingObj = new loading(document.getElementById('loading'), {
+            radius : 20,
+            circleLineWidth : 8
+        });
+        loadingObj.show();
+    </script>
+
+    <div id="outercont">
+        <div id="outer-cont" style="overflow:hidden;">
+            <div id="outer">
+                <img src="/files/activity-lottery-1.png" width="310px">
+            </div>
+        </div>
+        <div id="inner-cont">
+            <div id="inner">
+                <img src="/files/activity-lottery-2.png">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

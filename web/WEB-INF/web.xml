@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>coreServlet</servlet-name>
+        <servlet-class>org.kevin.wx.servlets.CoreServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>coreServlet</servlet-name>
+        <url-pattern>/coreServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goToCJ</servlet-name>
+        <servlet-class>org.kevin.wx.servlets.GoToCJServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goToCJ</servlet-name>
+        <url-pattern>/goToCJ</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>awardValidateServlet</servlet-name>
+        <servlet-class>org.kevin.wx.servlets.AwardValidateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>awardValidateServlet</servlet-name>
+        <url-pattern>/awardValidateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>awardServlet</servlet-name>
+        <servlet-class>org.kevin.wx.servlets.AwardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>awardServlet</servlet-name>
+        <url-pattern>/awardServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>pushToUserServlet</servlet-name>
+        <servlet-class>org.kevin.wx.servlets.PushToUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pushToUserServlet</servlet-name>
+        <url-pattern>/pushToUserServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
